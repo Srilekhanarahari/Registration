@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <style>
+        input[type=text], 
+        input[type=email],
+        input[type=tel] { 
+            width: 50%; 
+            padding: 12px 20px; 
+            margin: 8px 0; 
+            display: inline-block; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box; 
+        }
+        form button{
+            width: 50%; 
+            padding: 12px 20px; 
+            margin: 8px 0; 
+            display: inline-block; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box;
+        } 
+    </style>
+    <div class="container">
+    <form method="POST" action="valid.php">
+            <input type="text" placeholder="UserName" name="username" required> 
+            <input type="tel" placeholder="MobileNumber" name="MobileNumber" required>
+            <input type="email" placeholder="email" name="email" required>
+            <button type="submit" name="submit" value="Submit" >REGISTER </button> 
+    </form>
+    </div>
+</body>
+</html>
